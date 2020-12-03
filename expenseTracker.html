@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expenseTracker.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <div class="container">
+        <h2>Add New Transaction:</h2>
+        <div class="row">
+          <div class="col-15">
+            <label for="name">Shop Name:</label>
+          </div>
+          <div class="col-85">
+            <input type="text" id="name" name="tName" placeholder="Where was the expense made?">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-15">
+              <label for="date">Shopping Date:</label>
+            </div>
+            <div class="col-85">
+              <input type="date" id="date" name="tDate">
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-15">
+                <label for="amount">Amount Spent:</label>
+            </div>
+            <div class="col-85">
+              <input type="text" id="amount" name="tAmount">
+            </div>
+        </div> 
+        <div class="row" style="text-align: center">
+            <span onclick="newExpense()" class="addExpBtn">Add Expense</span>
+        </div>
+    </div>    
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>No expenses added yet!</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="expenseTracker.js"></script>
+</body>
+</html>
