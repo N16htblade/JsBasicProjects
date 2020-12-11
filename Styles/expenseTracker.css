@@ -29,6 +29,8 @@ input {
     resize: vertical;
 }
 
+input:focus {border: 2px solid lightgreen}
+
 .container {
     padding: 10px;
     width: 75%;
