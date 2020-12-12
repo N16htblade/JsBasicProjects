@@ -1,24 +1,21 @@
-* {
+* { 
     box-sizing: border-box;
-}
-
-h1 {
-    text-align: center;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #555;
 }
 
 h2 {
-    text-align: center;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(2, 82, 2);
+    color: rgb(236, 160, 17);
+    padding: 5px 10px 10px 40px;
+    margin: 0px;
 }
+
+h3 {color: whitesmoke}
 
 
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    color: whitesmoke
 }
 
 input {
@@ -27,9 +24,10 @@ input {
     border: 1px solid black;
     border-radius: 4px;
     resize: vertical;
+    background-color: whitesmoke;
 }
-
-input:focus {border: 2px solid lightgreen}
+    
+input:focus {border: 2px solid rgb(236, 160, 17)}
 
 .container {
     padding: 10px;
@@ -45,18 +43,19 @@ input:focus {border: 2px solid lightgreen}
 
 .addExpBtn {
     padding: 10px;
-    background: green;
-    color: white;
+    background: #d9d9d9;
+    color: #555;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
-    border: none;
+    border: 1px solid grey;
     border-radius: 4px;
     user-select: none;
 }
 
 .addExpBtn:hover {
-    background-color: rgb(2, 95, 2);
+    background-color: rgb(116, 116, 116);
+    color:rgb(236, 160, 17);
 }
 
 .col-15 {
@@ -75,42 +74,36 @@ input:focus {border: 2px solid lightgreen}
     clear: both;
 }
 
-
 table {
     border-collapse: collapse;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    
 }
 
 td, th {
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     padding: 5px;
     vertical-align: center;
     text-align: left;
     height: 35px;
     user-select: none;
+    background-color: #ddd;
 }
 
-th {
-    background-color: gray;
-    color: white;
-}
-
-tr:nth-child(odd) {background-color: whitesmoke;}
-
-tr:hover {
-    background-color: lightblue;
-    color: white;
+td:hover {    
+    background-color: rgb(116, 116, 116);
+    color:rgb(236, 160, 17);
 }
 
 .close {
-    padding: 4px;
-    font-size: 20px;
+    padding: 8px;
+    background-color: rgb(116, 116, 116);
 }
 
-.close:hover {background-color: darkred}
+.close:hover {color:rgb(236, 160, 17);}
 
 
 @media screen and (max-width: 600px) {

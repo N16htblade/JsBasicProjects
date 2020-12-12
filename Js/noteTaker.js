@@ -16,7 +16,8 @@ function newNote() {
         td.appendChild(t)
         document.getElementById("myTable").appendChild(tr);    
     }
-
+    document.getElementById("myText").value = "";
+    
     var button = document.createElement("BUTTON");
     var textview = document.createTextNode("Show");
     button.className = "view";
