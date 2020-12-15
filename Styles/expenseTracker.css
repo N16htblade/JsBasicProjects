@@ -1,72 +1,78 @@
 * { 
     box-sizing: border-box;
-    background-color: #555;
+    background-color: #00587A;
 }
 
 h2 {
-    color: rgb(236, 160, 17);
+    color: #E7E7DE;
     padding: 5px 10px 10px 40px;
     margin: 0px;
+    text-align: center;
+    font-size: 40px;
 }
 
-h3 {color: whitesmoke}
-
+h3 {
+    color:  #E7E7DE;
+    background-color: inherit;
+}
 
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-    color: whitesmoke
+    color:  #E7E7DE;
+    background-color: inherit;
 }
 
 input {
     width: 100%;
     padding: 9px;
-    border: 1px solid black;
+    border: 1px solid #00587A;
     border-radius: 4px;
     resize: vertical;
-    background-color: whitesmoke;
+    background-color:  #E7E7DE;
 }
     
-input:focus {border: 2px solid rgb(236, 160, 17)}
+input:focus {border: 2px solid #00587A}
 
 .container {
     padding: 10px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #005070;
 }
 
 .row {
     padding: 5px;
     margin-top: 5px;
+    background-color: inherit;
+}
+
+.col-20 {
+    float: left;
+    width: 20%;
+    background-color: inherit;
+}
+
+.col-80 {
+    float: left;
+    width: 80%;
+    background-color: inherit;
 }
 
 .addExpBtn {
     padding: 10px;
-    background: #d9d9d9;
-    color: #555;
+    background-color: #008891;
+    color: #E7E7DE;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
-    border: 1px solid grey;
+    border: 1px solid #E7E7DE;
     border-radius: 4px;
     user-select: none;
 }
 
-.addExpBtn:hover {
-    background-color: rgb(116, 116, 116);
-    color:rgb(236, 160, 17);
-}
-
-.col-15 {
-    float: left;
-    width: 20%;
-}
-
-.col-85 {
-    float: left;
-    width: 80%;
-}
+.addExpBtn:hover {background-color: #00666d}
 
 .row:after {
     content: "";
@@ -74,40 +80,49 @@ input:focus {border: 2px solid rgb(236, 160, 17)}
     clear: both;
 }
 
-table {
-    border-collapse: collapse;
-    width: 80%;
+.myTable {
+    padding: 0px;
+    margin: 20px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    
 }
 
-td, th {
-    border: 1px solid #555;
+.tcol-50 {
+    float: left;
+    width: 55%;
+    border: 1px solid #005070;
     padding: 5px;
-    vertical-align: center;
-    text-align: left;
-    height: 35px;
-    user-select: none;
-    background-color: #ddd;
+    background-color: #E7E7DE;
+    height: 30px;
 }
 
-td:hover {    
-    background-color: rgb(116, 116, 116);
-    color:rgb(236, 160, 17);
+.tcol-15 {
+    float: left;
+    width: 15%;
+    border: 1px solid #005070;
+    text-align: center;
+    padding: 5px;
+    background-color: #E7E7DE;
+    height: 30px;
 }
 
 .close {
-    padding: 8px;
-    background-color: rgb(116, 116, 116);
+    padding: 3.5px;
+    background-color: #008891;
+    color: #E7E7DE;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #E7E7DE;
+    border-radius: 4px;
+    user-select: none;
 }
 
-.close:hover {color:rgb(236, 160, 17);}
+.close:hover {background-color: #00666d}
 
 
 @media screen and (max-width: 600px) {
-    .col-15, .col-85, span {
+    .col-20, .col-80, span {
         width: 100%;
         margin-top: 0;
     }
