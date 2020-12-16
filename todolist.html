@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-    <link rel="stylesheet" href="./Styles/todolist.css">
+    <link rel="stylesheet" href="./Styles/expenseTracker.css">
 </head>
 <body>
-    <h2>My To Do List</h2>
-    <div id="myDiv" class="input">
-        <input type="text" id="myInput" placeholder="Add New Item...">
-        <span onclick="newElement()" class="addBtn">Add</span>
+    <div class="header">
+        <h2>My To Do List</h2>
+    </div>
+    
+    <div id="myDiv" class="container">
+        <h3>Add new task:</h3>
+        <div class="row">
+            <input type="text" id="myInput" placeholder="Add New Item...">
+        </div>
+        <div class="row" style="text-align: center">
+            <span onclick="newElement()" class="addExpBtn">Add Task</span>
+        </div>
     </div>
 
     <ul id="myUL">
