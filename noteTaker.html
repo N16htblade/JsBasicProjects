@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note Taker</title>
-    <link rel="stylesheet" href="./Styles/noteTaker.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 <body>
-    <h1>Note Taker</h1>
+    <div class="header">
+        <h2>Note Taker</h2>
+    </div>
+
     <div class="container">
-        <h2> Add A New Note:</h2>
+        <h3> Add A New Note:</h3>
         <div class="row">
             <div class="col-10">
                 <label for="note">Note:</label>
@@ -19,33 +22,27 @@
             </div>
         </div>
         <div class="row" style="text-align: center">
-            <span onclick="newNote()" class="addNoteBtn">Add Note</span>
+            <span onclick="newNote()" class="addBtn">Add Note</span>
         </div>
     </div>
 
-    <table id="myTable">
-        <thead>
-            <colgroup>
-                <col style="width:80%">
-                <col style="width:10%">
-                <col style="width:10%">
-            </colgroup>
-            <tr>
-                <th>Note</th>
-                <th>View</th>
-                <th>Remove</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>    
-                
-            </tr>
-        </tbody>
-    </table>
+    <div id="myTbl" class="myTable">
+        <div class="trow">
+            <div class="tcol-80">
+                Note
+            </div>
+            <div class="tcol-10">
+                View
+            </div>
+            <div class="tcol-10">
+                Remove
+            </div>
+        </div>
+    </div>
 
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="mclose">&times;</span>
             <p id="myNote"></p>
         </div>
     </div>

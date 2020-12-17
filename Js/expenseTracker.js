@@ -1,5 +1,6 @@
 var close = document.getElementsByClassName("close");
 
+
 function newExpense() {
 
     var name = document.getElementById("name").value;
